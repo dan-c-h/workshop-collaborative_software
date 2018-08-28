@@ -20,10 +20,10 @@ class ListGol(object):
         next_board = [[0] * self.width for _ in range(self.height)]
         for w in range(self.width):
             for h in range(self.height):
-                neighbours = self._neighbours(h, w)
+                neighbours = 2
                 if neighbours == 3:
                     next_board[h][w] = 1
-                elif neighbours == 2:
+                elif neighbours >= 1:
                     next_board[h][w] = self._board[h][w]
         self._board = next_board
 
