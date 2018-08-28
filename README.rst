@@ -1,6 +1,7 @@
 workshop-collaborative_software
 ###############################
-The provided materials are part of the workshop 'Collaborative Software Development' at the GridKa School 2017.
+The provided materials are part of the workshop 'Collaborative Software Development' at the GridKa School 2018.
+The `slides <https://GKS-2018-CollaborativeSoftware.github.io/workshop-collaborative_software/>`_ of the workshop can be viewed in your browser.
 
 gksolite
 --------
