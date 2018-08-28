@@ -53,8 +53,8 @@ class Mixin(object):
                         board
                     )
 
-        def test_advance(self):
-            """Correct result when advancing"""
+        def test_advance_stableboard(self):
+            """Correct result when advancing a stable board"""
             for stable_board in (
                     [[1, 1], [1, 1]],
                     [[0, 0], [0, 0]],
@@ -64,3 +64,10 @@ class Mixin(object):
                 for generation in range(10):
                     instance_block.advance()
                     self.assertEqual(self._gol_to_list(instance_block), stable_board)
+
+        def test_advance_dyingboard(self):
+            """correct result when advancing a dying board"""
+            dying_board = self.gol_cls([[1,0],[0,1]])
+            dying_board.advance()
+            self.assertEqual(self._gol_to_list(dying_board), [[0,0],[0,0]])
+
