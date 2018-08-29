@@ -81,9 +81,15 @@ BASELINE = pad("""\
 ######## #####   ###      ####### #####
 """)
 
+JUSTRANDOM = pad("""\
+# #  # #  # # # # #
+#   ######
+  ##    ######
+""")
+
 PATTERNS = [
     'BLOCK', 'BLINKER', 'BLINKER3', 'PULSAR', 'PENTADECATHLON', 'PINWHEEL', 'GLIDER', 'DIEHARD', 'GLIDER_GUN',
-    'PENTOMINO'
+    'PENTOMINO', 'JUSTRANDOM'
 ]
 
 __all__ = PATTERNS[:]
