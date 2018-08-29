@@ -1,6 +1,6 @@
 def pad(literal):
     if not literal:
-        return "  \n  "
+        return JUSTRANDOM
     lines = ['', *literal.splitlines(), '']
     width = max(len(line) for line in lines)
     return '\n'.join(' ' + line.ljust(width) + ' ' for line in lines)
